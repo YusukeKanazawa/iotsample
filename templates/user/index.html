@@ -1,0 +1,17 @@
+{{ define "title" }}Go Starter Application{{ end }}
+{{ define "content"}}
+<table>
+	<thead>
+		<tr>
+			<th>UserName</th>
+		</tr>
+	</thead>
+	<tbody>
+	{{ range $key, $value := . }}
+	<tr>
+		<td>{{ $value.UserName }}</td>
+	</tr>
+	{{ end }}
+	<tbody>
+</table>
+{{ end }}

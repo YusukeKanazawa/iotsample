@@ -1,0 +1,10 @@
+{{ define "title" }}Go Starter Application{{ end }}
+{{ define "content"}}
+<div id="content" style="width:200px; margin:auto">
+  <form id="user-form" method="post" action="/user">
+    <label for="uesrName"/><input type="text" name="userName" id="uerName">
+    <label for="passwrod"/><input type="password" name="password" id="password">
+    <button onclick="querySelector('#user-form').submit()">Store</button>
+  </form>
+</div>
+{{ end }}

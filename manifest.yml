@@ -1,0 +1,9 @@
+applications:
+- disk_quota: 512M
+  buildpack: go_buildpack
+  host: bi910224broker
+  name: broker
+  path: .
+  domain: eu-gb.mybluemix.net
+  instances: 1
+  memory: 128M
